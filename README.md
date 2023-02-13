@@ -1,5 +1,7 @@
 ## WordPress/Vue Starter Theme Using Inertia.js
 
+Note: This is an update to the original authors work to bring it in line with Inertia.js 1.0 with Vite and SSR support
+
 A bare-bones example theme using Inertia with Vue, and the WordPress Inertia adapter.
 
 ### Installation
@@ -12,6 +14,15 @@ composer install
 
 npm install
 npm run dev
+```
+
+To use the ssr server, you will need to build for production
+```bash
+cd *your-theme-name
+
+npm run build
+
+node build/ssr/ssr.js
 ```
 
 ### References

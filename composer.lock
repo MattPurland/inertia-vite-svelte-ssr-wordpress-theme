@@ -4,54 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30cb118753e275a21f2f032c922c89a8",
-    "packages": [
-        {
-            "name": "boxybird/inertia-wordpress",
-            "version": "v0.5.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/boxybird/inertia-wordpress.git",
-                "reference": "10979f286a257046f3809de01ca8897be260d921"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/boxybird/inertia-wordpress/zipball/10979f286a257046f3809de01ca8897be260d921",
-                "reference": "10979f286a257046f3809de01ca8897be260d921",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/functions.php"
-                ],
-                "psr-4": {
-                    "BoxyBird\\Inertia\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Andrew Rhyand",
-                    "email": "hello@andrewrhyand.com"
-                }
-            ],
-            "description": "The WordPress adapter for Inertia.js",
-            "keywords": [
-                "inertia.js",
-                "plugin",
-                "wordpress"
-            ],
-            "support": {
-                "issues": "https://github.com/boxybird/inertia-wordpress/issues",
-                "source": "https://github.com/boxybird/inertia-wordpress/tree/v0.5.6"
-            },
-            "time": "2022-02-12T19:49:49+00:00"
-        }
-    ],
+    "content-hash": "9da42e751fe807e17dd6ef238bc65805",
+    "packages": [],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
@@ -60,5 +14,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }

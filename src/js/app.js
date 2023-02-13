@@ -1,22 +1,16 @@
-import { createApp, h } from 'vue'
-import { createInertiaApp } from '@inertiajs/inertia-vue3'
-import { InertiaProgress } from '@inertiajs/progress'
-import Layout from './shared/Layout.vue'
-
-InertiaProgress.init()
+import { createInertiaApp } from '@inertiajs/svelte'
 
 createInertiaApp({
-  resolve: (name) => {
-    const page = require(`./Pages/${name}`).default
-
-    // Use global layout for all pages, unless overridden by individual page.
-    page.layout ??= Layout
-
-    return page
-  },
-  setup({ el, App, props, plugin }) {
-    createApp({ render: () => h(App, props) })
-      .use(plugin)
-      .mount(el)
-  },
+    resolve: name => {
+        const pages = import.meta.glob('./Pages/**/*.svelte', { eager: true })
+        return pages[`./Pages/${name}.svelte`]
+    },
+    setup({ el, App }) {
+        new App({ target: el, hydrate: true })
+    },
+    progress: {
+        color: '#e72176',
+        showSpinner: true,
+        includeCSS: false
+    }
 })

@@ -6,9 +6,9 @@
         <?php wp_head(); ?>
     </head>
     <body>
-
-        <?php bb_inject_inertia(); ?>
-
-        <?php wp_footer(); ?>
+        <?php 
+            bb_inject_inertia();
+            wp_footer();
+        ?>
     </body>
 </html>

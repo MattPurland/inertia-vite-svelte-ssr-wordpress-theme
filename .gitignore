@@ -1,7 +1,10 @@
 .vscode
 *.sql
 mix-manifest.json
-
-dist
 vendor
 node_modules
+hot
+composer.lock
+package-lock.json
+inertia-wordpress
+build
