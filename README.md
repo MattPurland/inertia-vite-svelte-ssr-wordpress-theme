@@ -1,6 +1,9 @@
-## WordPress/Vue Starter Theme Using Inertia.js
+**Note**: This is an update to the original authors work to bring it in line with Inertia.js 1.0 with Vite and SSR support
+You will also need to use my fork of the inertia-wordpress adapter (unless they accept my PR)
 
-Note: This is an update to the original authors work to bring it in line with Inertia.js 1.0 with Vite and SSR support
+https://github.com/MattPurland/inertia-wordpress
+
+## WordPress/Vue Starter Theme Using Inertia.js
 
 A bare-bones example theme using Inertia with Vue, and the WordPress Inertia adapter.
 
